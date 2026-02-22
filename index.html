@@ -1,40 +1,251 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BilZen Agribusiness</title>
-    <link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8">
+<title>BilZen Agribusiness</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f7f4;
+}
+
+/* Header */
+header {
+    background: white;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+header img {
+    width: 140px;
+}
+
+/* Hero */
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+    url("https://images.unsplash.com/photo-1500382017468-9049fed747ef");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+/* Navigation */
+nav {
+    background: #1b5e20;
+    padding: 12px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Sections */
+section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+}
+
+/* Cards */
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+.price {
+    color: #ff9800;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* Buttons */
+button {
+    background: #2e7d32;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background: #1b5e20;
+}
+
+/* Contact */
+.contact-info p {
+    margin: 8px 0;
+    font-size: 16px;
+}
+
+/* Footer */
+footer {
+    background: #1b5e20;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+</style>
 </head>
+
 <body>
-    <header>
-        <h1>Welcome to BilZen Agribusiness</h1>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Products</a></li>
-                <li><a href="#">Contact Us</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section>
-            <h2>Our Mission</h2>
-            <p>To provide high-quality agricultural products and services.</p>
-        </section>
-        <section>
-            <h2>Our Products</h2>
-            <ul>
-                <li>Fresh vegetables</li>
-                <li>Fruits</li>
-                <li>Cereals</li>
-                <li>Organic fertilizers</li>
-            </ul>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2026 BilZen Agribusiness. All rights reserved.</p>
-    </footer>
+
+<!-- HEADER -->
+<header>
+<img src="logo.png" alt="BilZen Logo">
+</header>
+
+<!-- HERO -->
+<div class="hero">
+<h1>BilZen Agribusiness</h1>
+<p>Quality Seeds • Tubers • Poultry • Trusted by Farmers</p>
+
+<a href="https://wa.me/255774846168">
+<button>Order via WhatsApp</button>
+</a>
+</div>
+
+<!-- NAVIGATION -->
+<nav>
+<a href="#about">About</a>
+<a href="#products">Products</a>
+<a href="#payment">Payment</a>
+<a href="#trading">Trading</a>
+<a href="#contact">Contact</a>
+</nav>
+
+<!-- ABOUT -->
+<section id="about">
+<div class="container">
+<h2>About Us</h2>
+<p>
+BilZen Agribusiness is a reliable supplier of high-quality maize, beans, cassava tubers,
+and poultry. We serve farmers, traders, and agro-dealers with affordable prices,
+consistent supply, and trusted service across Tanzania.
+</p>
+</div>
+</section>
+
+<!-- PRODUCTS -->
+<section id="products">
+<div class="container">
+<h2>Products & Prices</h2>
+
+<div class="products">
+
+<div class="card">
+<h3>Maize</h3>
+<p class="price">TSH 2,500 per kg</p>
+</div>
+
+<div class="card">
+<h3>Beans</h3>
+<p class="price">TSH 2,000 per kg</p>
+</div>
+
+<div class="card">
+<h3>Cassava Tubers</h3>
+<p class="price">TSH 1,500 per kg</p>
+</div>
+
+<div class="card">
+<h3>Broilers</h3>
+<p class="price">TSH 8,000 each</p>
+</div>
+
+<div class="card">
+<h3>Kienyeji Chicken</h3>
+<p class="price">Hen: TSH 20,000<br>Cock: TSH 25,000</p>
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- PAYMENT -->
+<section id="payment">
+<div class="container">
+<h2>Payment Method</h2>
+
+<div class="products">
+<div class="card">
+<h3>Tigo Pesa</h3>
+<p><strong>Number:</strong> 0774 846 168</p>
+<p><strong>Name:</strong> BILALI RAMADHANI MWENDA</p>
+</div>
+</div>
+
+<a href="tel:0774846168">
+<button>Pay via Tigo Pesa</button>
+</a>
+
+</div>
+</section>
+
+<!-- TRADING -->
+<section id="trading">
+<div class="container">
+<h2>Trading & Partnership</h2>
+<p>Retail • Wholesale Discounts • Agro-dealer Partnerships</p>
+
+<a href="mailto:mwendabilali272@gmail.com">
+<button>Become a Partner</button>
+</a>
+</div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+<div class="container contact-info">
+<h2>Contact Us</h2>
+<p>📞 Phone: 0774 846 168</p>
+<p>💬 WhatsApp: 0774 846 168</p>
+<p>📧 Email: mwendabilali272@gmail.com</p>
+
+<a href="https://wa.me/255774846168">
+<button>Chat on WhatsApp</button>
+</a>
+</div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+<p>© 2026 BilZen Agribusiness</p>
+<p>Growing With Farmers</p>
+</footer>
+
 </body>
 </html>
